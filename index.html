@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- required mta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <!-- linking css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- linking bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container_fluid">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark ">
+            <a class="navbar-brand" href="#">
+                <h1> <strong>LS</strong></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link active " href="#">
+                            <h3>PYthon</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="web.html">
+                            <h3>Web</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <h3>c++</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <h3>About</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="body" class="container_fluid">
+
+        <div class="container " style="background-color: #E2C275;">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link " href="#">NOTES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Q/A</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">QUESTIONS</a>
+                </li>
+            </ul>
+            <ol>
+                <li>
+                    <p>
+                    <h4>Write a program to iterate the first 10 numbers and in each iteration, print the sum of
+                        the current</h4>
+
+                    </p>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6   ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#expectedsolution1"
+                                aria-expanded="false" aria-controls="multiCollapseExample2">Expected solution:</button>
+
+                            <div class="collapse multi-collapse" id="expectedsolution1">
+                                <div class="card card-body">
+
+                                    <h3>Expected solution</h3>
+                                    Printing current and previounumber sum in a range(10)<br>
+                                    Current Number 0 Previous Number 0 Sum: 0<br>
+                                    Current Number 1 Previous Number 0 Sum: 1<br>
+                                    Current Number 2 Previous Number 1 Sum: 3<br>
+                                    Current Number 3 Previous Number 2 Sum: 5<br>
+                                    Current Number 4 Previous Number 3 Sum: 7<br>
+                                    Current Number 5 Previous Number 4 Sum: 9<br>
+                                    Current Number 6 Previous Number 5 Sum: 11<br>
+                                    Current Number 7 Previous Number 6 Sum: 13<br>
+                                    Current Number 8 Previous Number 7 Sum: 15<br>
+                                    Current Number 9 Previous Number 8 Sum: 17<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6         ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#solution1"
+                                aria-expanded="false" aria-controls="multiCollapseExample1 ">solution:</button>
+
+                            <div class="collapse multi-collapse" id="solution1">
+                                <div class="card card-body">
+                                    <h3>solution</h3>
+                            <pre>
+print("Addition of Previous and Current Numbers:")
+for a in range(10):
+    for b in range(10):
+        if b == a:
+            b = a - 1
+            if b == -1:
+                b = 0
+            sum = a + b 
+            result = "Previous Number: {}       Current Number: {}      Sum: {}"
+            print(result.format(b, a, sum))
+                            </pre>                                 
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <p>
+                    <h4>Write a program to print multiplication table (table of 10) up to a given number</h4>
+
+                    </p>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6   ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#expectedsolution2"
+                                aria-expanded="false" aria-controls="multiCollapseExample2">Expected solution:</button>
+
+                            <div class="collapse multi-collapse" id="expectedsolution2">
+                                <div class="card card-body">
+
+                                    <h3>Expected solution</h3>
+                                    For example, num = 2 so the output should be multiplication table from 1 - 2:<br>
+
+                                    ------ 1 -----<br>
+                                    1 x 1 = 1<br>
+                                    1 x 2 = 2<br>
+                                    1 x 3 = 3<br>
+                                    1 x 4 = 4<br>
+                                    1 x 5 = 5<br>
+                                    1 x 6 = 6<br>
+                                    1 x 7 = 7<br>
+                                    1 x 8 = 8<br>
+                                    1 x 9 = 9<br>
+                                    1 x 10 = 10<br>
+                                    ------ 2 -----<br>
+                                    2 x 1 = 2<br>
+                                    2 x 2 = 4<br>
+                                    2 x 3 = 6<br>
+                                    2 x 4 = 8<br>
+                                    2 x 5 = 10<br>
+                                    2 x 6 = 12<br>
+                                    2 x 7 = 14<br>
+                                    2 x 8 = 16<br>
+                                    2 x 9 = 18<br>
+                                    2 x 10 = 10<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6         ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#solution2"
+                                aria-expanded="false" aria-controls="multiCollapseExample1 ">solution:</button>
+
+                            <div class="collapse multi-collapse" id="solution2">
+                                <div class="card card-body">
+                                    <h3>solution</h3>
+ <pre>
+    num = int(input("Enter a numer: "))
+for i in range(1, num+1):
+    print("---", i, "---")
+    for j in range(1, 11):   
+        print(i, "*", j, "=", i * j)
+ </pre>                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>
+                    <h4>Write a program to display all prime numbers on any given range:</h4>
+
+                    </p>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6   ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#expectedsolution3"
+                                aria-expanded="false" aria-controls="multiCollapseExample2">Expected solution:</button>
+
+                            <div class="collapse multi-collapse" id="expectedsolution3">
+                                <div class="card card-body">
+
+                                    <h3>Expected solution</h3>
+                                    Prime numbers between 25 and 50 are:<br>
+                                    29<br>
+                                    31<br>
+                                    37<br>
+                                    41<br>
+                                    43<br>
+                                    47<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6         ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#solution3"
+                                aria-expanded="false" aria-controls="multiCollapseExample1 ">solution:</button>
+
+                            <div class="collapse multi-collapse" id="solution3">
+                                <div class="card card-body">
+                                    <h3>solution</h3>
+                                    <pre>
+                                        ​
+for i in range(25,51):
+    for n in range(2,i):
+        if (i%n)==0:
+            break
+    else:
+        print(i)    
+            
+                                    </pre>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>
+                    <h4>Write a program to check if the input number is prime or not.</h4>
+
+                    </p>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6   ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#expectedsolution4"
+                                aria-expanded="false" aria-controls="multiCollapseExample2">Expected solution:</button>
+
+                            <div class="collapse multi-collapse" id="expectedsolution4">
+                                <div class="card card-body">
+
+                                    <h3>Expected solution</h3>
+                                    if it is prime print it is prime else print not prime
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6         ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#solution4"
+                                aria-expanded="false" aria-controls="multiCollapseExample1 ">solution:</button>
+
+                            <div class="collapse multi-collapse" id="solution4">
+                                <div class="card card-body">
+                                    <h3>solution</h3>
+ <pre>
+i=int(input("enter a number:"))
+for n in range(2,i):
+    if i%n==0:
+        print ("no prime")
+        break
+    else:
+        print("prime")
+ </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>
+                    <h4>Print a given string in inverse order.</h4>
+
+                    </p>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6   ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#expectedsolution5"
+                                aria-expanded="false" aria-controls="multiCollapseExample2">Expected solution:</button>
+
+                            <div class="collapse multi-collapse" id="expectedsolution5">
+                                <div class="card card-body">
+
+                                    <h3>Expected solution</h3>
+                                    e.g. if "ram" is given<br>
+                                    anser: "mar"
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6         ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#solution5"
+                                aria-expanded="false" aria-controls="multiCollapseExample1 ">solution:</button>
+
+                            <div class="collapse multi-collapse" id="solution5">
+                                <div class="card card-body">
+                                    <h3>solution</h3>
+                                 <pre>
+b = ""
+a = "ram"
+for v in a:
+    b = v + b
+
+print (b)
+                                 </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>
+                    <h4>:From any given string, create two variables - characters and number separate</h4>
+
+                    </p>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6   ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#expectedsolution6"
+                                aria-expanded="false" aria-controls="multiCollapseExample2">Expected solution:</button>
+
+                            <div class="collapse multi-collapse" id="expectedsolution6">
+                                <div class="card card-body">
+
+                                    <h3>Example</h3>
+                                    a = "sadf23sdfdf"<br>
+
+
+                                    Answer:<br>
+                                    a_char= "sadfsdfdf"<br>
+                                    a_num = "23"<br>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6         ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#solution6"
+                                aria-expanded="false" aria-controls="multiCollapseExample1 ">solution:</button>
+
+                            <div class="collapse multi-collapse" id="solution6">
+                                <div class="card card-body">
+                                    <h3>solution</h3>
+                                  <pre>
+a="12s3rrr55"
+b=""
+d=""
+for i in a:
+    if i.isnumeric():
+        a=i
+        b=b+a
+    else:
+        a=i
+        d=d+a
+e="a_num = "+b
+f="a_char = "+d
+print(e)
+print(f)
+​
+                                  </pre>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>
+                    <h4>Write a program to Turn every item of a list into its square:</h4>
+
+                    </p>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6   ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#expectedsolution7"
+                                aria-expanded="false" aria-controls="multiCollapseExample2">Expected solution:</button>
+
+                            <div class="collapse multi-collapse" id="expectedsolution7">
+                                <div class="card card-body">
+
+                                    <h3>Expected solution</h3>
+                                    n = [1, 2, 3, 4, 5, 6, 7]<br>
+
+                                    Result:<br>
+                                    [1, 4, 9, 16, 25, 36, 49]<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6         ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#solution7"
+                                aria-expanded="false" aria-controls="multiCollapseExample1 ">solution:</button>
+
+                            <div class="collapse multi-collapse" id="solution7">
+                                <div class="card card-body">
+                                    <h3>solution</h3>
+                                   <pre>
+a=[2,3,457,8]
+b=len(a)
+for i in range(b):
+    a[i]=a[i]*a[i]
+print(a)
+                                   </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>
+                    <h4>Write a program to Turn only even item of a list into its square:</h4>
+
+                    </p>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6   ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#expectedsolution8"
+                                aria-expanded="false" aria-controls="multiCollapseExample2">Expected solution:</button>
+
+                            <div class="collapse multi-collapse" id="expectedsolution8">
+                                <div class="card card-body">
+
+                                    <h3>Expected solution</h3>
+                                    n = [1, 2, 3, 4, 5, 6, 7]<br>
+
+                                    Result:<br>
+                                    [ 4, 16, 36]<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6         ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#solution8"
+                                aria-expanded="false" aria-controls="multiCollapseExample1 ">solution:</button>
+
+                            <div class="collapse multi-collapse" id="solution8">
+                                <div class="card card-body">
+                                    <h3>solution</h3>
+                                <pre>
+a=[2,3,4,8,9,10]
+b=len(a)
+new=[]
+for i in range(b):
+    if a[i]%2==0:
+        s=a[i]*a[i]  
+        new.append(s)
+print(new)  
+
+                                </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>
+                    <h4>Write a program to from given two list, create single list concatenating each elements of second list with each of first.</h4>
+
+                    </p>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6   ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#expectedsolution9"
+                                aria-expanded="false" aria-controls="multiCollapseExample2">Expected solution:</button>
+
+                            <div class="collapse multi-collapse" id="expectedsolution9">
+                                <div class="card card-body">
+
+                                    <h3>Example</h3>
+                                    given:<br>
+                                    list1 = ["Hello ", "take "]<br>
+                                    list2 = ["Dear", "Sir"]<br>
+                                    Result:<br>
+                                    ['Hello Dear', 'Hello Sir', 'take Dear', 'take Sir']<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6         ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#solution9"
+                                aria-expanded="false" aria-controls="multiCollapseExample1 ">solution:</button>
+
+                            <div class="collapse multi-collapse" id="solution9">
+                                <div class="card card-body">
+                                    <h3>solution</h3>
+a=["hello ","take "]<br>
+b=["sir","mam"]<br>
+newlist=[i + j for i in a for j in b ]<br>
+print(newlist)<br>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+               
+                <li>
+                    <p>
+                    <h4>Write a program to generate fibonnaci series:</h4>
+
+                    </p>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6   ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#expectedsolution10"
+                                aria-expanded="false" aria-controls="multiCollapseExample2">Expected solution:</button>
+
+                            <div class="collapse multi-collapse" id="expectedsolution10">
+                                <div class="card card-body">
+
+                                    <h3>Expected solution</h3>
+                                    Fibonacci sequence:<br>
+                                    0  1  1  2  3  5  8  13  21  34
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6         ">
+                            <button class="btn " type="button" data-toggle="collapse" data-target="#solution10"
+                                aria-expanded="false" aria-controls="multiCollapseExample1 ">solution:</button>
+
+                            <div class="collapse multi-collapse" id="solution10">
+                                <div class="card card-body">
+                                    <h3>solution</h3>
+                               <pre>
+a=0
+b=1
+print("FIBONANCCI SEQUENCE :")
+print(a,end=",")
+print(b,end=",")
+for i in range(0,8):
+    c=a+b
+    a=b
+    b=c
+    print(c,end=",")
+                               </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ol>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                any queries
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">oops! something went wrong</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            sorry
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+
+
+
+        </div>
+        
+    </div>
+    <div id="bottom" class="container">
+
+    </div>
+    </div>
+   
+</body>
+
+</html>

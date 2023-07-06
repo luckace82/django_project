@@ -1,0 +1,102 @@
+.container
+{
+    padding-top: 30px;
+}
+
+
+.question
+{
+    color:none
+}
+.container_fluid
+{
+    background-color: #000000;
+}   
+.navbar-brand
+{
+    margin-left: 5%;
+    color: #13a851;
+}
+.navbar-brand:hover
+{
+    color: hsl(27, 18%, 10%);!important
+}
+.navbar-toggler{
+    margin-right: 5%;
+}
+#body.container_fluid
+{
+    background-color: #C36A2D;
+}
+.nav-item
+{
+    padding: 5px;
+}
+li{
+    font-size:30px;
+    color: #3C2A21;
+}
+h4{
+    color: #3C2A21;
+}
+.card.card-body
+{
+    font-size: medium;
+    background-color: #562B08;
+    color: #EADCA6;
+}
+.body{
+    background-color: #E8F3D6;
+}
+.row
+{
+    padding: 0 5% 5% 5%;
+    color:#950101 ;
+    
+}
+button.btn
+{
+    padding: 5px;
+    color: #FF0000;
+    background-color: #000000;
+}
+.nav-tabs .nav-link{
+    color: #FF0000;
+    font-size: 20px;
+}
+.row.justify-content-center{
+    padding-bottom: 0%;
+}
+.page-item
+{
+    background-color: #E2C275;
+    font-size: 15px;
+    padding-top: 30px;
+    padding-bottom: 100px; 
+}
+
+.page-link
+{
+    background-color:#C36A2D  !important; 
+    color: #0a0a0a!important;
+    border: 1px solid #000 !important;
+  
+}
+
+.btn-primary
+{
+    border-color: #000 !important;
+}
+ol{
+    padding-top: 30px;
+}
+#bottom.container
+{
+    background-color: #000;
+    padding: 20px;
+    margin-top: 0;
+}
+pre
+{
+    color:whitesmoke !important;
+}
